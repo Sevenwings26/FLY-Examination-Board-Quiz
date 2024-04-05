@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .container{
     text-align: center;
     margin: auto;
@@ -14,9 +15,9 @@ body {
 }
 
 header{
-    height: 10vh;
+    height: 15vh;
     width: 100%;
-    background-color: rgb(9, 153, 158);
+    background-color: rgb(3, 56, 105);
     color: #ffff;
     align-content: center;
     text-align: center;
@@ -26,20 +27,20 @@ header{
 p {
     text-align: center;
     padding: 15px 15px;
-    color: rgb(24, 24, 53);
+    color: rgb(6, 6, 80);
 }
 
 .btn {
     padding: 20px 40px;
     background-color: #ffff;
-    color: rgb(9, 153, 158);
+    color: rgb(3, 56, 105);
     font-size: 24px;
-    border: 2px solid rgb(9, 153, 158);
+    border: 2px solid rgb(3, 56, 108);
     border-radius: 20px;
 }
 
-.display {
-    border: 1px solid gray;
+#display {
+    border: 1px solid rgb(3, 56, 108);
     width: 30%;
     margin: auto;
     margin-top: 20px;
@@ -63,3 +64,6 @@ input[type = 'radio']{
 }
 
 
+#questionContainer {
+    color: rgb(3, 56, 108);
+}

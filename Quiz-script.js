@@ -1,7 +1,8 @@
 // Questions 
 const Questions = [
     {
-        question:'What is the name of the largest city in West African?', options:['Lagos', 'Accra', 'Cairo','Ibadan'], 
+        question:'What is the name of the largest city in West African?', 
+        options:['Lagos', 'Accra', 'Cairo','Ibadan'], 
         correctAns:'Ibadan',
         userAns: ''
 
@@ -22,9 +23,9 @@ const Questions = [
     },
 
     {
-        question:"_____ is a type of rainfall in the list.",
-        options:['Rain guage','Orographic','Dew','Precipitation'],
-        correctAns:"Orographic",
+        question:"_____ is not an eventlistener",
+        options:['Click','Onchange','Tapping','Right-click'],
+        correctAns:"Tapping",
         userAns:""
     },
 
@@ -36,16 +37,16 @@ const Questions = [
     },
 
     {
-        question:"_____ is a type of rainfall in the list.",
-        options:['Rain guage','Orographic','Dew','Precipitation'],
-        correctAns:"Orographic",
+        question:"Data can be the stored in the structure except? ",
+        options:['Function','Turple','Dictionary','List'],
+        correctAns:"Function",
         userAns:""
     },
 
     {
-        question:"_____ is a type of rainfall in the list.",
-        options:['Rain guage','Orographic','Dew','Precipitation'],
-        correctAns:"Orographic",
+        question:"_____ is used in programming to represent a real-life situation.",
+        options:['Functions','Container','Break','Classes'],
+        correctAns:"Classes",
         userAns:""
     },
 
@@ -130,7 +131,7 @@ function viewQuestionDiv(v){
     
     // btnStart.innerHTML = "Test in progress";
     // add time 
-    let time = 50;
+    let time = 60;
     let timer = setInterval(() => {
         time--;
         btnStart.innerHTML = time;
@@ -159,7 +160,7 @@ function viewQuestionDiv(v){
     display.style.border = "none"
     display.style.margin = "auto"
     display.style.marginTop = "30px"
-    display.style.backgroundColor = "gray"
+    display.style.backgroundColor = "black"
     display.style.padding = "30px"
     
     let Box = document.getElementById('questionContainer');
