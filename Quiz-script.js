@@ -166,7 +166,7 @@ function viewQuestionDiv(v){
     let Box = document.getElementById('questionContainer');
     Box.style.border = "2px"
     Box.style.height = "40vh"
-    Box.style.width = "80%%"
+    Box.style.width = "80%"
     Box.style.margin = "auto"
     Box.style.backgroundColor = "white"
     Box.style.padding = "20px"
@@ -277,28 +277,23 @@ previousPage.addEventListener('click', () => {
     }
 });
 
-
+let numberOfBonus = 3;
 bonus.addEventListener('click', el => {
-    bonusCount ++
-    if (bonusCount >= 4) {
+    bonusCount ++;
+    // Run bonus 3 times 
+    if (bonusCount > numberOfBonus) {
         alert('Used up...')
-        bonusCount = 3
     } else {
-
+        
+        // extract the correct answer 
         Questions[index].options.splice(Questions[index].options.indexOf(Questions[index].correctAns), 1)
-        let newOptions = `
-        <div class="radio-div">
-            <input type="radio" name="radio" id="radio" onchange="userSelection('${Questions[index].options[1]}')">
-            <label for= 'radio'>${Questions[index].options[1]}</label>
-        </div>
-        <div class="radio-div">
-            <input type="radio" name="radio" id="radio" onchange="userSelection('${Questions[index].correctAns}')">
-            <label for= 'radio'>${Questions[index].correctAns }</label>
-        </div>          
-        `
+        Questions[index].options.splice(1, 2)
+        Questions[index].options.push(Questions[index].correctAns)
+        
+        questionOptions()
         questionContainer.innerHTML = `
-        <h2>${numbering} - ${Questions[index].question}</h2>
-        <div>${newOptions}</div>`
+            <h2>${numbering} - ${Questions[index].question}</h2>
+            <div>${option}</div>`;
     
     }
 })

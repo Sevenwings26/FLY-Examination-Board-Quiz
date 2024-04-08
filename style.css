@@ -23,6 +23,10 @@ header{
     text-align: center;
 }
 
+.fly{
+    background-color: #ffff;
+    color: rgb(3, 56, 105);
+}
 
 p {
     text-align: center;
