@@ -11,7 +11,7 @@
 }
 
 body {
-    height: 120vh;
+    height: 150vh;
 }
 
 header{
@@ -71,3 +71,15 @@ input[type = 'radio']{
 #questionContainer {
     color: rgb(3, 56, 108);
 }
+
+#previous-page {
+    font-size: 14px;
+    padding: 8px;
+    border-radius: 15px;
+    border: none;
+    border-radius: 15px; 
+    margin-top: 8px;
+}
+
+
+

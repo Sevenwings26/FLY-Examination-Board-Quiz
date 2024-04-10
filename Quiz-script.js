@@ -65,8 +65,8 @@ const Questions = [
     },
 
     {
-        question:"_____ is a type of rainfall in the list.",
-        options:['Rain guage','Orographic','Dew','Precipitation'],
+        question:"One of the importance of user-defined function is that:",
+        options:['it reduces repetition and reusability','it contains all modules','it contains fewer lines of code.','instances can be declared with it'],
         correctAns:"Orographic",
         userAns:""
     },
@@ -187,20 +187,14 @@ function viewQuestionDiv(v){
 
     let stylePrevious = document.getElementById('previous-page');
 
-    stylePrevious.style.fontSize = "18px"
-    stylePrevious.style.padding = "10px"
-    stylePrevious.style.border = "none"
-    stylePrevious.style.borderRadius = "15px"
-    stylePrevious.style.marginBottom = '40px'
-    
     previousPage.hidden = true
     
     // add bonus button 
     display.appendChild(bonus);
 
     let styleBonus = document.getElementById('btn-bonus');
-    styleBonus.style.fontSize = "18px"
-    styleBonus.style.padding = "10px"
+    styleBonus.style.fontSize = "14px"
+    styleBonus.style.padding = "8px"
     styleBonus.style.border = "none"
     styleBonus.style.borderRadius = "15px"
     styleBonus.style.marginLeft = "100px"
@@ -209,8 +203,8 @@ function viewQuestionDiv(v){
     display.appendChild(nextPage);
 
     let styleNext = document.getElementById('next-page');
-    styleNext.style.fontSize = "18px"
-    styleNext.style.padding = "10px"
+    styleNext.style.fontSize = "14px"
+    styleNext.style.padding = "8px"
     styleNext.style.border = "none"
     styleNext.style.borderRadius = "15px"
     styleNext.style.marginLeft = "100px"
