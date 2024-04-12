@@ -83,6 +83,7 @@ let bonusCount = 0
 let nextPage = document.createElement('button');
 nextPage.id = "next-page";
 nextPage.innerHTML = "Next"
+nextPage.className = "next-page";
 
 let previousPage = document.createElement('button');
 previousPage.id = "previous-page";
@@ -92,6 +93,7 @@ previousPage.innerHTML = "Previous"
 let bonus = document.createElement('button');
 bonus.id = "btn-bonus";
 bonus.innerHTML = "50/50";
+bonus.className = "btn-bonus";
 
 
 
@@ -197,7 +199,7 @@ function viewQuestionDiv(v){
     styleBonus.style.padding = "8px"
     styleBonus.style.border = "none"
     styleBonus.style.borderRadius = "15px"
-    styleBonus.style.marginLeft = "100px"
+    styleBonus.style.marginLeft = "30px"
 
     // next 
     display.appendChild(nextPage);
@@ -207,9 +209,7 @@ function viewQuestionDiv(v){
     styleNext.style.padding = "8px"
     styleNext.style.border = "none"
     styleNext.style.borderRadius = "15px"
-    styleNext.style.marginLeft = "100px"
-    // styleNext.style.marginTop = '20px'
-
+    styleNext.style.marginLeft = "10px"
 };
 // Step 1 Ends
 
