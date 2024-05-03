@@ -5,7 +5,6 @@ const Questions = [
         options:['Lagos', 'Accra', 'Cairo','Ibadan'], 
         correctAns:'Ibadan',
         userAns: ''
-
     },
 
     {
@@ -163,7 +162,7 @@ function viewQuestionDiv(v){
     display.style.margin = "auto"
     display.style.marginTop = "30px"
     display.style.backgroundColor = "black"
-    display.style.padding = "30px"
+    display.style.padding = "10px"
     
     let Box = document.getElementById('questionContainer');
     Box.style.border = "2px"
